@@ -5,6 +5,7 @@ import QuestionCard from "./components/QuestionCard";
 // types
 import { QuestionState, Difficulty } from "./API";
 // Styles
+import { GlobalStyle } from "./App.style";
 
 export type AnswerObject = {
   question: string;
@@ -13,7 +14,7 @@ export type AnswerObject = {
   correctAnswer: string;
 };
 
-const TOTAL_QUESTIONS = 10;
+const TOTAL_QUESTIONS = 6;
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState(false);
@@ -66,12 +67,22 @@ const App: React.FC = () => {
 
   return (
     <>
+      <GlobalStyle />
       <h1>REACT QUIZ</h1>
+      <label htmlFor="catagory">Choose a Catagory:</label>
+      <select name="catagory" id="catagory">
+        <option value="history">History</option>
+        <option value="sports">sports</option>
+        <option value="science">science</option>
+        <option value="astronomy">astronomy</option>
+      </select>
+      <br />
       {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
         <button className="start" onClick={startTrivia}>
           Start
         </button>
       ) : null}
+
       <p className="score">Score: {score}</p>
       {loading ? <p>Loading Questions...</p> : null}
       {!loading && !gameOver && (
