@@ -9,7 +9,6 @@ html{
 body{
     background-image: url(${background});
     background-size: cover;
-    color: white;
     margin: 0;
     padding: 0 20px;
     display: flex;
@@ -52,9 +51,6 @@ export const Wrapper = styled.div`
     margin: 20px;
     text-align: center;
 
-  }
-  .label{
-    color: white;
 }
 .start, .next{
     cursor: pointer;
