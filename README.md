@@ -1,6 +1,7 @@
 # Deployed site on Netlify here.
 
-- [ts-react-quizapp.netlify.app]
+Click or copy [ts-react-quizapp.netlify.app](ts-react-quizapp.netlify.app)
+in browser to see app.
 
 ## Available Scripts
 
