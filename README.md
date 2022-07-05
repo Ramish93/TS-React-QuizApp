@@ -1,6 +1,6 @@
 # Deployed site on Netlify here.
 
-- ts-react-quizapp.netlify.app
+- [ts-react-quizapp.netlify.app]
 
 ## Available Scripts
 
