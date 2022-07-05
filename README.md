@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Deployed site on Netlify here.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- ts-react-quizapp.netlify.app
 
 ## Available Scripts
 
